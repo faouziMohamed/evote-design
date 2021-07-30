@@ -6,11 +6,9 @@
   padding: 0;
 }
 
-/* kkk */
 .main-header {
   display: flex;
   flex-direction: column;
-  /* background-color: aqua; */
 }
 .top-header {
   display: flex;
@@ -19,7 +17,6 @@
 .logo-wrapper {
   display: flex;
   align-items: center;
-  /* background-color: blue; */
 }
 .title-wrapper {
   display: flex;
@@ -31,7 +28,6 @@
 .nav-bar {
   display: flex;
   flex-flow: column;
-  /* background-color: aqua; */
   position: relative;
 }
 

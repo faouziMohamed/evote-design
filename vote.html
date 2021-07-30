@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link rel="stylesheet" href="/css/vote.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://pro.fontawesome.com/releases/v5.15.2/css/all.css"
+    />
+    <title>Document</title>
   </head>
 
   <body class="body-content">
@@ -24,30 +29,30 @@
           <label for="toggle" class="menu-btn-text">Menu</label>
         </div>
         <ul class="list">
-          <li class="list-item"
-            ><a href="#" class="nav-link"
+          <li class="list-item">
+            <a href="#" class="nav-link"
               ><i class="fas fa-vote-yea"></i
               ><span class="link-item-text">Vote</span></a
-            ></li
-          >
-          <li class="list-item"
-            ><a href="#" class="nav-link"
+            >
+          </li>
+          <li class="list-item">
+            <a href="#" class="nav-link"
               ><i class="fas fa-poll"></i
               ><span class="link-item-text">Result</span></a
-            ></li
-          >
-          <li class="list-item"
-            ><a href="#" class="nav-link"
+            >
+          </li>
+          <li class="list-item">
+            <a href="#" class="nav-link"
               ><i class="fas fa-person-sign"></i
               ><span class="link-item-text">About</span></a
-            ></li
-          >
-          <li class="list-item"
-            ><a href="#" class="nav-link"
+            >
+          </li>
+          <li class="list-item">
+            <a href="#" class="nav-link"
               ><i class="fas fa-sign-out-alt"></i
               ><span class="link-item-text">Logout</span></a
-            ></li
-          >
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -71,14 +76,13 @@
             </small>
           </div>
         </div>
-        <div class="candidate-card-item confirm">
-          <div class="check">
-            <input
-              type="checkbox"
-              class="confirm-vote-checkbox"
-              id="confirm-vote-checkbox"
-            />
-            <label>confirm vote</label>
+        <div class="candidate-card-item vote-wrapper">
+          <div class="checkbox-input-wrapper">
+            <small class="prevent-before-vote">Activate here → </small>
+            <label id="switch" class="switch">
+              <input type="checkbox" id="slider" class="hidden vote-checkbox" />
+              <span class="slider round"></span>
+            </label>
           </div>
           <button class="vote-btn">Vote now</button>
         </div>
@@ -95,16 +99,15 @@
             <small class="candidate-desc">Etudiant en Master GLPC</small>
           </div>
         </div>
-        <div class="candidate-card-item confirm">
-          <div class="check">
-            <input
-              type="checkbox"
-              class="confirm-vote-checkbox"
-              id="confirm-vote-checkbox"
-            />
-            <label>confirme vote</label>
+        <div class="candidate-card-item vote-wrapper">
+          <div class="checkbox-input-wrapper">
+            <small class="prevent-before-vote">Activate here →</small>
+            <label id="switch" class="switch">
+              <input type="checkbox" id="slider" class="hidden vote-checkbox" />
+              <span class="slider round"></span>
+            </label>
           </div>
-          <button class="vote-btn">Voter</button>
+          <button class="vote-btn">Vote now</button>
         </div>
       </div>
       <div class="candidate-card">
@@ -118,20 +121,19 @@
             <small class="candidate-desc">Etudiant en Master GLPC</small>
           </div>
         </div>
-        <div class="candidate-card-item confirm">
-          <div class="check">
-            <input
-              type="checkbox"
-              class="confirm-vote-checkbox"
-              id="confirm-vote-checkbox"
-            />
-            <label>confirme vote</label>
+        <div class="candidate-card-item vote-wrapper">
+          <div class="checkbox-input-wrapper">
+            <small class="prevent-before-vote"> Activate here → </small>
+            <label id="switch" class="switch">
+              <input type="checkbox" id="slider" class="hidden vote-checkbox" />
+              <span class="slider round"></span>
+            </label>
           </div>
-          <button class="vote-btn">Voter</button>
+          <button class="vote-btn">Vote now</button>
         </div>
       </div>
     </main>
-    <script src="./navbar.js" type="module" async></script>
-    <script src="./button.js" type="module" async></script>
+    <script src="./js/navbar.js" type="module" async></script>
+    <script src="./js/button.js" type="module" async></script>
   </body>
 </html>

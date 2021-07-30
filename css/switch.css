@@ -1,0 +1,68 @@
+/*Objects in the web site : theme toogler, toTop button and burger button */
+.switch {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+}
+/*End Enxtending theme variables*/
+
+/* The slider */
+.slider {
+  display: flex;
+  align-items: center;
+  flex-basis: 100%;
+  height: 15px;
+  transition: 0.4s;
+  cursor: pointer;
+  background-color: #ba8a05;
+}
+
+.slider.round {
+  border-radius: 20px;
+}
+
+input:checked + .slider {
+  background-color: rgb(51, 85, 94);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #005ca7;
+}
+
+.slider::before {
+  --size: 34px;
+  content: "";
+  display: flex;
+  align-items: center;
+  height: var(--size);
+  width: var(--size);
+  border-radius: 50%;
+  border: 1px solid rgb(232, 175, 33);
+  box-shadow: 0 0 10px 2px rgb(253, 210, 68);
+  transform: translateX(-10px);
+  font-size: 209%;
+  transition: 0.4s;
+  background-color: rgb(238, 190, 67);
+  background-image: url("/images/sun_shine.svg");
+  background-repeat: no-repeat;
+}
+
+input:checked + .slider::before {
+  --size: 34px;
+  content: "";
+  display: flex;
+  font-size: 180%;
+  align-items: center;
+  height: 34px;
+  width: var(--size);
+  border: 1px solid rgb(116, 124, 122);
+  box-shadow: 0 0 12px 3px rgb(49, 175, 169);
+  transform: translateX(24px);
+  background-color: rgb(160, 160, 157);
+  background-image: url("/images/moon_face.svg");
+  background-repeat: no-repeat;
+  background-size: 36px 35px;
+  background-position: -5px 0;
+}
